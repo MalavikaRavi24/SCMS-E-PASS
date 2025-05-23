@@ -1,1 +1,69 @@
-Single-database configuration for Flask.
+INTRODUCTION
+SCMS E-PASS is a web-based platform designed for hostel students to conveniently book weekend transportation. The system features two portals—Student and Admin—ensuring seamless access and management. Students can register, log in, and search for buses by entering the origin, destination, and travel date. The platform instantly calculates travel expenses, allowing users to make informed decisions. Seat allocation follows a real-time, First-In-First-Out (FIFO) method to ensure fairness and efficiency. After selecting a preferred seat, students can proceed with a secure UPI payment. Upon successful payment, users receive a downloadable QR code and a digital ticket containing all relevant travel details for easy access. The Admin portal facilitates smooth backend operations, enabling efficient monitoring and management of bookings. SCMS E-PASS enhances transparency, reduces manual workload, and ensures a streamlined booking experience through automation and digital payment integration, making it a smart and scalable solution for hostel transport management.
+SYSTEM ARCHITECTURE
+
+1. Student Login: Students log in to the system using their credentials and access their
+personalized dashboard. They can book weekend bus passes, track seat availability, and
+monitor their reservation status. The input to the system includes travel details, profile
+information, and UPI payment confirmations. The expected output for students includes
+booking confirmations, real-time seat availability updates, and bus tracking features.
+
+2. Admin Login: Administrators log in to the system and access a dashboard where they can
+manage bus schedules, track reservations, and monitor seat allocations. They can approve
+or reject pass requests and ensure proper coordination of available resources. The input to
+the system includes bus route details, seat availability, and reservation approvals. The
+expected output includes an organized seat management system, reservation updates, and
+enhanced transparency in transportation logistics.
+
+Working of the project
+Home Page
+The Home Page contains an overview of the E-PASS system, providing details about its purpose and
+features. It also includes a login button that directs users to the authentication page.
+Login Page
+There are two ways to log in:
+ Student Login: Students can log in using their college-provided credentials. If registered, they are
+directed to their student dashboard; otherwise, they are prompted to register.
+ Admin Login: Administrators and transport officers can log in using their official credentials to
+manage bus passes and student requests.
+Student Registration Page
+To register as a student, users need to provide the following details:
+ Student ID: Unique identifier for authentication.
+ Name: Full name of the student.
+ Batch & Department: Details for verification.
+ Phone Number: Contact information.
+Once registered, students can access their dashboard
+Student Dashboard
+The student dashboard has the following features:
+ Home: Displays notifications regarding their bus pass applications.
+ Apply for E-PASS: Students can request weekend bus passes by providing:
+o Destination
+o Date of Travel
+o Time Slot
+o Mode of Payment (UPI-based transactions)
+ View E-PASS Status: Displays pending, approved, or rejected pass requests.
+ Transaction History: Shows previous payment details for transparency.
+ Profile: Students can view and update their details.
+ Sign Out: Securely logs the user out of the system
+Bus Reservation and Seat Management
+ The system dynamically allocates seats based on availability.
+ Students can view real-time seat availability before applying.
+ Once a pass is generated, a QR code-based confirmation is issued.
+Admin Dashboard
+ Manage Student Requests: View, approve, or reject E-PASS applications.
+ Bus Allocation: Assign bus seats and manage routes efficiently.
+ Payment Management: Verify successful transactions before approving passes.
+ Generate Reports: Generate data insights on student travel trends.
+Navigation and Sidebar
+ Navbar: Allows easy access to dashboard pages.
+ Sidebar: Displays important details like upcoming travel, payment status, and notifications.
+E-PASS Generation and Verification
+ Approved passes generate a unique QR code.
+ Bus conductors scan the QR code to verify the student’s booking.
+ Once verified, students can board the bus.
+
+
+
+
+
+
+
